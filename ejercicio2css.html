@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ejercicio selectores CSS</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <style>
+      h1 {
+        color: aqua;
+      }
+      h2 {
+        color: blue;
+      }
+      #uno {
+        color: aquamarine;
+      }
+      #dos {
+        color: azure;
+      }
+      #tres {
+        color: red;
+      }
+      #quatro {
+        font-style: italic;
+        color: blue;
+      }
+      #cinco {
+        color: blue;
+      }
+      table, 
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        border-collapse: collapse;
+      }
+      #a1,
+      #a2,
+      #a3,
+      #a4 {
+        color: blueviolet;
+      }
+      #b3,
+      #b1,
+      #b2,
+      #b4 {
+        color: green;
+      }
+      #c1,
+      #c2,
+      #c3 {
+        color: orange;
+      }
+      #t1,
+      #t2,
+      #t3 {
+        color: yellow;
+      }
+      #r1 {
+        color: blanchedalmond;
+      }
+      #q1 {
+        color: brown;
+      }
+      #e1 {
+        color: gray;
+      }
+    </style>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>
+      Nulla pretium. Sed tempus nunc vitae neque. <strong id="uno">Suspendisse gravida</strong>, metus a scelerisque sollicitudin, lacus velit ultricies nisl, nonummy tempus neque
+      diam quis felis. <span id="dos">Etiam sagittis tortor</span> sed arcu sagittis tristique.
+    </p>
+    <h2>Aliquam tincidunt, sem eget volutpat porta</h2>
+    <p>
+      Vivamus velit dui, placerat vel, feugiat in, ornare et, urna. <a href="https://google.es" id="tres">Aenean turpis metus, <em id="quatro">aliquam non</em>, tristique in</a>,
+      pretium varius, sapien. Proin vitae nisi. Suspendisse <span id="e1">porttitor purus ac elit</span>. Suspendisse eleifend odio at dui. In in elit sed metus pretium elementum.
+    </p>
+    <table summary="Descripción de la tabla y su contenido">
+      <caption id="cinco">
+        Título de la tabla
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col" id="a1">Título columna 1</th>
+          <th scope="col" id="a2">Título columna 2</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col" id="c2">Título columna 1</th>
+          <th scope="col" id="c3">Título columna 2</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th scope="row" id="a3">Título fila 1</th>
+          <td id="b1">Donec purus ipsum</td>
+          <td id="b2">Curabitur <em>blandit</em></td>
+        </tr>
+        <tr>
+          <th scope="row" id="c1">Título fila 2</th>
+          <td id="b3">Donec <strong id="a4">purus ipsum</strong></td>
+          <td id="b4">Curabitur blandit</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <p id="t1">
+        Donec purus ipsum, posuere id, venenatis at, <span>placerat ac, lorem</span>. Curabitur blandit, eros sed gravida aliquet, risus justo porta lorem, ut mollis lectus tortor
+        in orci. Pellentesque nec augue.
+      </p>
+      <p id="t2">
+        Fusce nec felis eu diam pretium adipiscing. <span id="r1">Nunc elit elit, vehicula vulputate</span>, venenatis in, posuere id, lorem. Etiam sagittis, tellus in ultrices
+        accumsan, diam nisi feugiat ante, eu congue magna mi non nisl.
+      </p>
+      <p id="t3">
+        Vivamus ultrices aliquet augue. <a href="https://google.es" id="q1">Donec arcu pede, pretium vitae</a>, rutrum aliquet, tincidunt blandit, pede. Aliquam in nisi.
+        Suspendisse volutpat. Nulla facilisi. Ut ullamcorper nisi quis mi.
+      </p>
+    </div>
+  </body>
+</html>

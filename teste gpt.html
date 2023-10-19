@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Estilos para o quadrado grande */
+  .quadrado-grande {
+    width: 230px;
+    height: 150px;
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Estilos para os quadrados pequenos */
+  .quadrado-pequeno {
+    width: 90px;
+    height: 90px;
+    
+  }
+
+  /* Cores para os quadrados pequenos */
+  .quadrado-azul {
+    background-color: blue;
+    position: static;
+    margin: 0 ;
+    margin-top: ;
+  }
+
+  .quadrado-verde {
+    background-color: rgb(9, 92, 7);
+    position: fixed; top: 110px; left: 8px;
+  }
+  .quadrado-amarelo {
+    background-color: rgb(244, 238, 67);
+    position: absolute; top: 48px;left: 90px;
+  }
+  .quadrado-vermelho{
+    background-color: rgb(254, 11, 11);
+    position: absolute; top: -113px;left: 269px;
+  }
+</style>
+</head>
+<body>
+  <div class="quadrado-grande">
+    <div class="quadrado-pequeno quadrado-azul"></div>
+    <div class="quadrado-pequeno quadrado-verde"></div>
+    <div class="quadrado-pequeno quadrado-amarelo"></div>
+    <div class="quadrado-pequeno quadrado-vermelho"></div>
+  </div>
+</body>
+</html>

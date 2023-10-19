@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página con Estilos CSS Complejos</title>
+    <link rel="stylesheet" type="text/css" href="paginacompletacss.css" />
+    <style>
+      body {
+        background-color: rgb(222, 222, 222);
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .services {
+        background-image: url(../assets/fondo.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+      }
+
+      .services.h2 {
+        color: rgb(72, 72, 72);
+      }
+
+      .navbar {
+        background-color: rgb(81, 81, 81);
+        padding: 10px;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        margin-right: 10px;
+      }
+      .icon {
+        text-align: center;
+        font-size: xx-large;
+      }
+
+      #textimonios {
+        padding: 50px;
+      }
+      #contacto {
+        background-color: white;
+        padding: 50px;
+        text-align: center;
+      }
+      #contacto input,
+      #contacto textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px, color solid black;
+      }
+      #contacto button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      #contacto button:hover {
+        background-color: rgb(75, 75, 167);
+      }
+
+      #w1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      #a1 {
+        text-align: left;
+        margin-left: 50px;
+      }
+      .card1 {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        justify-content: left;
+        margin: 20px;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+      }
+      .card2 {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        justify-content: left;
+        margin: 20px;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        text-align: left;
+      }
+      .author {
+        text-align: left;
+        margin: 10px;
+        margin-left: 0%;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: ;
+      }
+      #f1 {
+        height: auto;
+        width: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="icon">🚀</div>
+        <p id="w1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget felis id dui sodales varius.</p>
+      </div>
+    </section>
+
+    <section id="textimonios" class="testimonials">
+      <div class="container">
+        <h2 id="a1">Testimonios</h2>
+        <div class="card1">
+          <p id="s1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget felis id dui sodales varius.</p>
+          <p class="author"><strong>- John Doe </strong></p>
+        </div>
+        <div class="card2">
+          <p id="s2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget felis id dui sodales varius.</p>
+          <p class="author"><strong>- Jane Smith</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-form">
+      <div class="container">
+        <h2>Contáctanos</h2>
+        <form id="f1">
+          <input type="text" placeholder="Nombre" required />
+        </form>
+        <form id="f2">
+          <input type="email" placeholder="Correo electrónico" required />
+        </form>
+        <form id="f3">
+          <textarea placeholder="Mensaje" required></textarea>
+        </form>
+        <form id="z1">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

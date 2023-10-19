@@ -1,0 +1,46 @@
+body{
+    background-image: url(../exercicios/background_login.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    }
+
+.login-container{
+    width: 300px;
+    height: 310px;
+    margin-left: 35%;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px black ;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    display:flexbox;
+}
+#register a{
+    color: rgb(194, 92, 92);
+    text-decoration: none;
+}
+
+input{
+    text-align: center;
+    padding: 8px 10px;
+    width: 83%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px auto;
+}
+
+button {
+    padding: 10px 20px;
+    width: 180px;
+    background-color: rgb(61, 61, 61);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    
+  }
+  button:hover{
+    background-color: rgb(136, 135, 135);
+  }
+

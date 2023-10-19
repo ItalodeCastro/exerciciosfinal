@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tienda de Ropa - Sarita</title>
+    <style>
+        body {
+          background-color: rgb(245, 232, 217);
+          margin: 0px;
+          text-align: center; 
+        }
+        header {
+          background-color: wheat;
+          color: white;
+          text-align: center;
+          padding: 5px;
+        }
+
+        h2 {
+          text-align: center;
+          width: 100%;
+        }
+
+        /* Estilos para pantallas grandes */
+        @media screen and (min-width: 1024px){
+          .product{
+          grid-template-columns: repeat(4, 1fr);
+          }
+        }
+
+    /* Estilos para pantallas medianas */
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+          .product {
+        grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+    /* Estilos para pantallas pequeñas */
+    @media screen and (max-width: 767px) {
+      .product{
+        grid-template-columns: 1fr;
+      }
+    }
+
+        
+
+        nav {
+          background-color: wheat;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        /* Estilizando os itens da lista */
+        li {
+          display: inline; /* Isso faz com que os itens sejam exibidos lado a lado */
+          margin-right: 10px; /* Adiciona um espaço entre os itens */
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        #favoritos {
+          background-color: #d6ba7a;
+          /* Color de fondo */
+          padding: 20px;
+          /* Espacio interior */
+          border-radius: 5px;
+          /* Borde redondeado */
+          box-shadow: 0 2px 5px rgba(45, 35, 35, 0.1);
+          /* Sombra */
+          text-align: center;
+
+          /* Alineación de texto */
+          justify-content: center;
+          grid-gap: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          }
+
+
+
+        #hombres {
+          background-color: #eee2c5;
+          /* Color de fondo */
+          padding: 20px;
+          /* Espacio interior */
+          border-radius: 5px;
+          /* Borde redondeado */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          /* Sombra */
+          text-align: center;
+
+          /* Alineación de texto */
+          justify-content: center;
+          grid-gap: 20px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        #mujeres {
+          background-color: #8d7a4c;
+          /* Color de fondo */
+          padding: 20px;
+          /* Espacio interior */
+          border-radius: 5px;
+          /* Borde redondeado */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          /* Sombra */
+          text-align: center;
+
+          /* Alineación de texto */
+          justify-content: center;
+          grid-gap: 20px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        #ninos {
+          background-color: #ffe3a2;
+          /* Color de fondo */
+          padding: 20px;
+          /* Espacio interior */
+          border-radius: 5px;
+          /* Borde redondeado */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          /* Sombra */
+          text-align: center;
+
+          /* Alineación de texto */
+          justify-content: center;
+          grid-gap: 20px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .product {
+          background-color: #ffffff;
+          /* Color de fondo */
+          padding: 20px;
+          /* Espacio interior */
+          border-radius: 5px;
+          /* Borde redondeado */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          /* Sombra */
+          text-align: center;
+          /* Alineación de texto */
+        }
+        #favoritos .product img:hover{
+          transform:scale(1.1);
+          transition:transform 0.3s;
+        }
+
+        .product img {
+          width: 200px;
+          /* Ancho de imagen */
+          height: auto;
+          /* Altura de imagen automática */
+          margin-bottom: 10px;
+          /* Margen inferior */
+        }
+
+        footer p{
+          color:white;
+          padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Tienda de Ropa - Sarita</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#hombres">Hombres</a></li>
+        <li><a href="#mujeres">Mujeres</a></li>
+        <li><a href="#ninos">Niños</a></li>
+        <li><a href="#favoritos">Favoritos</a></li>
+      </ul>
+    </nav>
+    <section id="favoritos">
+      <h2>Productos Favoritos</h2>
+      <div class="product">
+        <img src="mujer1.jpg" alt="Favorito 1" />
+        <h3>Vestido de Fiesta</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <div class="product">
+        <img src="nino2.jpg" alt="Favorito 2" />
+        <h3>Camiseta de Diseño</h3>
+        <p>Precio: 45€</p>
+      </div>
+      <div class="product">
+        <img src="hombre1.jpg" alt="Favorito 3" />
+        <h3>Camisa elegante</h3>
+        <p>Precio: 65€</p>
+      </div>
+      <!-- Agrega más productos favoritos aquí -->
+    </section>
+
+    <section id="hombres">
+      <h2>Ropa para Hombres</h2>
+      <div class="product">
+        <img src="hombre1.jpg" alt="Hombre 1" />
+        <h3>Camisa de Vestir</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <div class="product">
+        <img src="hombre2.jpg" alt="Hombre 2" />
+        <h3>Pantalón de Mezclilla</h3>
+        <p>Precio: 70€</p>
+      </div>
+      <div class="product">
+        <img src="hombre1.jpg" alt="Hombre 1" />
+        <h3>Camisa de Vestir</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <div class="product">
+        <img src="hombre2.jpg" alt="Hombre 2" />
+        <h3>Pantalón de Mezclilla</h3>
+        <p>Precio: 70€</p>
+      </div>
+      <div class="product">
+        <img src="hombre1.jpg" alt="Hombre 1" />
+        <h3>Camisa de Vestir</h3>
+        <p>Precio: 50€</p>
+      </div>
+      <div class="product">
+        <img src="hombre2.jpg" alt="Hombre 2" />
+        <h3>Pantalón de Mezclilla</h3>
+        <p>Precio: 70€</p>
+      </div>
+      <!-- Agrega más productos para hombres aquí -->
+    </section>
+
+    <section id="mujeres">
+      <h2>Ropa para Mujeres</h2>
+      <div class="product">
+        <img src="mujer1.jpg" alt="Mujer 1" />
+        <h3>Vestido de Verano</h3>
+        <p>Precio: 80€</p>
+      </div>
+      <div class="product">
+        <img src="mujer2.jpg" alt="Mujer 2" />
+        <h3>Blusa Estampada</h3>
+        <p>Precio: 45€</p>
+      </div>
+      <div class="product">
+        <img src="mujer1.jpg" alt="Mujer 1" />
+        <h3>Vestido de Verano</h3>
+        <p>Precio: 80€</p>
+      </div>
+      <div class="product">
+        <img src="mujer2.jpg" alt="Mujer 2" />
+        <h3>Blusa Estampada</h3>
+        <p>Precio: 45€</p>
+      </div>
+      <div class="product">
+        <img src="mujer1.jpg" alt="Mujer 1" />
+        <h3>Vestido de Verano</h3>
+        <p>Precio: 80€</p>
+      </div>
+      <div class="product">
+        <img src="mujer2.jpg" alt="Mujer 2" />
+        <h3>Blusa Estampada</h3>
+        <p>Precio: 45€</p>
+      </div>
+      <!-- Agrega más productos para mujeres aquí -->
+    </section>
+
+    <section id="ninos">
+      <h2>Ropa para Niños</h2>
+      <div class="product">
+        <img src="nino1.jpg" alt="Niño 1" />
+        <h3>Conjunto Deportivo</h3>
+        <p>Precio: 35€</p>
+      </div>
+      <div class="product">
+        <img src="nino2.jpg" alt="Niño 2" />
+        <h3>Camiseta de Dibujos Animados</h3>
+        <p>Precio: 20€</p>
+      </div>
+      <div class="product">
+        <img src="nino1.jpg" alt="Niño 1" />
+        <h3>Conjunto Deportivo</h3>
+        <p>Precio: 35€</p>
+      </div>
+      <div class="product">
+        <img src="nino2.jpg" alt="Niño 2" />
+        <h3>Camiseta de Dibujos Animados</h3>
+        <p>Precio: 20€</p>
+      </div>
+      <div class="product">
+        <img src="nino1.jpg" alt="Niño 1" />
+        <h3>Conjunto Deportivo</h3>
+        <p>Precio: 35€</p>
+      </div>
+      <div class="product">
+        <img src="nino2.jpg" alt="Niño 2" />
+        <h3>Camiseta de Dibujos Animados</h3>
+        <p>Precio: 20€</p>
+      </div>
+      <!-- Agrega más productos para niños aquí -->
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Tienda de Ropa - Sarita. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
