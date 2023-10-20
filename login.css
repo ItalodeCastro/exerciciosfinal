@@ -2,20 +2,20 @@ body{
     background-image: url(../exercicios/background_login.jpg);
     background-size: auto;
     background-repeat: no-repeat;
-    }
-
-.login-container{
-    width: 300px;
-    height: 310px;
-    margin-left: 35%;
-    margin-top: 10%;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px black ;
+    display: flex;
     align-items: center;
+    justify-content:center ;
+    font-size: large;
+    
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 2%;
+    padding: 20px;
     text-align: center;
-    border-radius: 5px;
-    display:flexbox;
+    margin-top: 322px;
+    margin-left: 180px;
 }
 #register a{
     color: rgb(194, 92, 92);

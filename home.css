@@ -7,21 +7,30 @@ body{
 header{
     background-image: url(../exercicios/comida.jpg);    
     padding: 5%;
-    border-bottom-width: 15px;
-    border-bottom-color: red ;
            
 }
 #header-div{
-    background-color: hsl(0, 79%, 51%, 30%);     
+    background-color: rgba(245, 94, 94, 0.6);
     margin: 0 auto;
-    border-radius: 2%;
     width: fit-content;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+h1{
+    width: 100%;
     color: white;
+}
+nav{
+    background-color: red;
     padding: 10px;
 }
+
 h2{
     font-size:large;
     text-align: center;
+    margin-bottom: 18px;
+    color: white;
     }
 
 h3{
@@ -43,4 +52,44 @@ ul {
 	}
 ul li{
     margin: 10px;
+}
+
+#takeaway_container {
+
+    display: flex;
+    justify-content: center;
+}
+
+
+#ii1{
+    margin: 8px;
+    margin-bottom: -26px;
+    text-decoration: none;
+    
+}
+#takeaway_container a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(245, 94, 94);
+}
+footer p {
+
+    background-color: rgba(245, 94, 94);
+    color: white;
+    padding: 35px;
+    text-align: center; 
+    margin-bottom: 0;
+    font-size: 15px;
+}
+  /* Estilos para pantallas medianas */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    header{
+    background-image: url(../exercicios/header_media.jpg);
+}
+
+@media screen and (max-width: 767px) and (min-width: 1px) {
+    header{
+    background-image: url(../exercicios/header_peque.png);
+    }
 }

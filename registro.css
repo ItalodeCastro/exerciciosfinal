@@ -1,17 +1,18 @@
 body{
     background-image: url(../exercicios/background_register.jpg);
     background-size: auto;
-       
+    box-sizing: border-box;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
 }
 
-#contenedor{
-    float: inline-end;
-    width: 85% auto  ;
-    height: 70% auto ;
+#contenedor{        
     background-color: rgb(196, 144, 153);
     border-radius: 10px;
     margin-top: 20%;
-    margin-left: 30%;
+    margin-left: 50px;
+    padding: 10px;
     }
   
 .container_section{
@@ -73,7 +74,7 @@ h1, h2{
 
 button {
     padding: 10px 20px;
-    width: 180px;
+    width: 190px;
     margin-left: 10px;
     margin-top: 10px;
     background-color: rgb(61, 61, 61);
@@ -82,5 +83,12 @@ button {
     cursor: pointer;
     text-decoration: none;
 }
+#div_button{
+    margin-left: 10px;
+    margin-top: 8px;
+    ;
+}
+
+
 
 
